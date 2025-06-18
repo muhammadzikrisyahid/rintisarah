@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RINTIS Arah - Komunitas Pecinta Alam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="preloader">
+    <h1>RINTIS ARAH</h1>
+    <p>Menemukan Arah Lewat Jejak</p>
+  </div>
+
+  <header class="main-header">
+    <h1 class="logo">RINTIS ARAH</h1>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#infoSection">Informasi</a></li>
+        <li><a href="#form-cerita">Cerita</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="unifiedSearch" placeholder="Cari gunung, simaksi, cuaca..." />
+      <button onclick="handleSearch()">🔍</button>
+    </div>
+    <div class="controls">
+      <select id="languageSelect">
+        <option value="id">🇮🇩</option>
+        <option value="en">🇺🇸</option>
+      </select>
+      <button id="toggleTheme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="frame animate" id="beranda">
+      <h2>Selamat Datang di Rintis Arah</h2>
+      <p>Komunitas Pecinta Alam dan Pendaki Gunung</p>
+    </section>
+
+    <section class="frame animate" id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>Rintis Arah adalah komunitas pecinta alam yang menjelajah gunung dengan tanggung jawab dan cinta lingkungan. Kami berfokus pada edukasi, pelestarian, dan perjalanan penuh makna.</p>
+      <h3>Visi</h3>
+      <p>Membangun ruang tumbuh dan pulang bagi jiwa-jiwa muda yang mencari arah—melalui jejak, jeda, dan perjalanan yang bermakna.</p>
+      <h3>Misi</h3>
+      <p>Kami percaya bahwa merawat alam adalah merawat diri, karena menjaga lingkungan bukan sekadar aksi, melainkan cara untuk menyembuhkan dan menyadarkan diri. Melalui setiap perjalanan dan ekspedisi, kami mencipta makna yang membentuk perspektif dan karakter. Kami menghidupkan komunitas yang tulus dan terus tumbuh, di mana perbedaan dirayakan, cerita dibagikan, dan teman menjadi keluarga. Dengan mengubah cerita menjadi gerak lewat dokumentasi, kami menyuarakan nilai, membangun kesadaran, dan menginspirasi perubahan. Sebagai generasi yang peduli dan peka terhadap alam, sesama, dan suara hati, kami yakin bahwa perubahan besar selalu berawal dari kesadaran kecil.</p>
+    </section>
+
+    <section class="frame animate" id="infoSection">
+      <h2>Informasi Gunung</h2>
+      <div id="mountainInfo"></div>
+      <div id="simaksiResult"></div>
+      <div id="weatherResult"></div>
+      <div id="transportResult"></div>
+      <div id="mapContainer"></div>
+    </section>
+
+    <section class="frame animate" id="galeri-statis">
+  <h2>Galeri Gunung</h2>
+
+   <div class="video-container">
+    <video controls width="100%">
+      <source src="Toronto.mp4" type="video/mp4">
+      Browser kamu tidak mendukung pemutar video.
+    </video>
+
+  <!-- Merbabu -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="kevin1.jpg" alt="Merbabu 1">
+    </div>
+    <div class="gallery-item">
+      <img src="kevin2.jpg" alt="Merbabu 2">
+    </div>
+    <div class="gallery-item">
+      <img src="k.jpg" alt="Merbabu 3">
+    </div>
+  </div>
+
+
+</section>
+
+
+    <!-- HASIL PENCARIAN TAMPIL DI SINI (DINAMIS) -->
+    <section class="frame animate" id="searchResult"></section>
+
+    <section class="frame animate" id="form-cerita">
+      <h2>Bagikan Cerita Pendakianmu</h2>
+      <form id="storyForm">
+        <input type="text" name="nama" placeholder="Nama kamu" required />
+        <textarea name="cerita" placeholder="Ceritakan pengalaman mendakimu..." required></textarea>
+        <button type="submit">Kirim Cerita</button>
+      </form>
+    </section>
+
+  <footer>
+    <p>© 2025 Rintis Arah. Menemukan arah lewat jejak.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
