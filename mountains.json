@@ -1,0 +1,146 @@
+{
+  "merbabu": {
+    "id": {
+      "info": "Gunung Merbabu di Jawa Tengah.",
+      "simaksi": "Basecamp Selo.",
+      "weather": "10-15°C",
+      "transport": "Boyolali - Selo",
+      "map": "https://www.google.com/maps?q=Gunung+Merbabu"
+    },
+    "en": {
+      "info": "Mount Merbabu in Central Java.",
+      "simaksi": "Selo Basecamp.",
+      "weather": "10-15°C",
+      "transport": "Boyolali - Selo",
+      "map": "https://www.google.com/maps?q=Mount+Merbabu"
+    }
+  },
+  "rinjani": {
+    "id": {
+      "info": "Gunung Rinjani di Lombok, NTB.",
+      "simaksi": "Sembalun/Senaru.",
+      "weather": "5-15°C",
+      "transport": "Mataram - Sembalun",
+      "map": "https://www.google.com/maps?q=Gunung+Rinjani"
+    },
+    "en": {
+      "info": "Mount Rinjani, Lombok.",
+      "simaksi": "Sembalun/Senaru route.",
+      "weather": "5-15°C",
+      "transport": "Mataram - Sembalun",
+      "map": "https://www.google.com/maps?q=Mount+Rinjani"
+    }
+  },
+  "semeru": {
+    "id": {
+      "info": "Gunung Semeru, puncak tertinggi Jawa.",
+      "simaksi": "Online TNBTS.",
+      "weather": "0-5°C",
+      "transport": "Malang - Tumpang",
+      "map": "https://www.google.com/maps?q=Gunung+Semeru"
+    },
+    "en": {
+      "info": "Mount Semeru, highest in Java.",
+      "simaksi": "Online TNBTS.",
+      "weather": "0-5°C",
+      "transport": "Malang - Tumpang",
+      "map": "https://www.google.com/maps?q=Mount+Semeru"
+    }
+  },
+  "lawu": {
+    "id": {
+      "info": "Gunung Lawu, Jawa Tengah.",
+      "simaksi": "Cemoro Sewu/Cetho.",
+      "weather": "Dingin",
+      "transport": "Solo - Karanganyar",
+      "map": "https://www.google.com/maps?q=Gunung+Lawu"
+    },
+    "en": {
+      "info": "Mount Lawu, Central Java.",
+      "simaksi": "Cemoro Sewu/Cetho.",
+      "weather": "Cold",
+      "transport": "Solo - Karanganyar",
+      "map": "https://www.google.com/maps?q=Mount+Lawu"
+    }
+  },
+  "kerinci": {
+    "id": {
+      "info": "Gunung Kerinci, puncak Sumatera.",
+      "simaksi": "Basecamp Kersik Tuo.",
+      "weather": "0-5°C",
+      "transport": "Sungai Penuh - Kersik Tuo",
+      "map": "https://www.google.com/maps?q=Gunung+Kerinci"
+    },
+    "en": {
+      "info": "Mount Kerinci, Sumatra's peak.",
+      "simaksi": "Kersik Tuo Basecamp.",
+      "weather": "0-5°C",
+      "transport": "Sungai Penuh - Kersik Tuo",
+      "map": "https://www.google.com/maps?q=Mount+Kerinci"
+    }
+  },
+  "everest": {
+    "id": {
+      "info": "Gunung Everest, tertinggi di dunia.",
+      "simaksi": "Nepal permit.",
+      "weather": "-20°C",
+      "transport": "Kathmandu - Lukla",
+      "map": "https://www.google.com/maps?q=Mount+Everest"
+    },
+    "en": {
+      "info": "Mount Everest, world's highest.",
+      "simaksi": "Nepal permit.",
+      "weather": "-20°C",
+      "transport": "Kathmandu - Lukla",
+      "map": "https://www.google.com/maps?q=Mount+Everest"
+    }
+  },
+  "kilimanjaro": {
+    "id": {
+      "info": "Gunung Kilimanjaro, Afrika.",
+      "simaksi": "Tanzania permit.",
+      "weather": "-5°C",
+      "transport": "Moshi Town",
+      "map": "https://www.google.com/maps?q=Mount+Kilimanjaro"
+    },
+    "en": {
+      "info": "Mount Kilimanjaro, Africa.",
+      "simaksi": "Tanzania permit.",
+      "weather": "-5°C",
+      "transport": "Moshi Town",
+      "map": "https://www.google.com/maps?q=Mount+Kilimanjaro"
+    }
+  },
+  "fuji": {
+    "id": {
+      "info": "Gunung Fuji, Jepang.",
+      "simaksi": "Yamanashi route.",
+      "weather": "-5°C",
+      "transport": "Tokyo - Kawaguchiko",
+      "map": "https://www.google.com/maps?q=Mount+Fuji"
+    },
+    "en": {
+      "info": "Mount Fuji, Japan.",
+      "simaksi": "Yamanashi route.",
+      "weather": "-5°C",
+      "transport": "Tokyo - Kawaguchiko",
+      "map": "https://www.google.com/maps?q=Mount+Fuji"
+    }
+  },
+  "elbrus": {
+    "id": {
+      "info": "Gunung Elbrus, Eropa.",
+      "simaksi": "Russia permit.",
+      "weather": "-10°C",
+      "transport": "Mineralnye Vody",
+      "map": "https://www.google.com/maps?q=Mount+Elbrus"
+    },
+    "en": {
+      "info": "Mount Elbrus, Europe.",
+      "simaksi": "Russia permit.",
+      "weather": "-10°C",
+      "transport": "Mineralnye Vody",
+      "map": "https://www.google.com/maps?q=Mount+Elbrus"
+    }
+  }
+}
