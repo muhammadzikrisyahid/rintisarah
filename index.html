@@ -2,234 +2,108 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rintis Arah - Komunitas Pecinta Alam</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RINTIS Arah - Komunitas Pecinta Alam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#hero" class="nav-link active">Beranda</a></li>
-      <li><a href="#about" class="nav-link">Tentang Kami</a></li>
-      <li><a href="#projects" class="nav-link">Kegiatan</a></li>
-    </ul>
-    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
-  </nav>
+  <div id="preloader">
+    <h1>RINTIS ARAH</h1>
+    <p>Menemukan Arah Lewat Jejak</p>
+  </div>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <h1>Selamat Datang di Rintis Arah</h1>
-      <h2>Komunitas Pecinta Alam dan Pendaki Gunung</h2>
-      <p>Kami hadir untuk menginspirasi dan mengajak kamu menjelajahi alam dengan penuh semangat dan rasa tanggung jawab.</p>
-      <a href="#contact" class="btn">Gabung Bersama Kami</a>
+  <header class="main-header">
+    <h1 class="logo">RINTIS ARAH</h1>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#infoSection">Informasi</a></li>
+        <li><a href="#form-cerita">Cerita</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="unifiedSearch" placeholder="Cari gunung, simaksi, cuaca..." />
+      <button onclick="handleSearch()">🔍</button>
     </div>
-  </section>
+    <div class="controls">
+      <select id="languageSelect">
+        <option value="id">🇮🇩</option>
+        <option value="en">🇺🇸</option>
+      </select>
+      <button id="toggleTheme">🌙</button>
+    </div>
+  </header>
 
-  <!-- Tentang Kami Section -->
-  <section id="about" class="skill-grid">
-    <h2>Tentang Kami</h2>
-    <div>
-      <div class="project-card">
-        <img src="jeka.jpeg" width="100%" height="auto" alt="Dashboard Project" />
-      </div>
-      <p>Rintis Arah adalah sebuah komunitas pecinta alam dan pendaki gunung yang dibentuk dengan semangat menjelajahi alam secara bertanggung jawab dan bermakna. Komunitas ini bukan hanya sekadar tempat berkumpul para pendaki, tetapi juga ruang tumbuh bagi jiwa-jiwa muda yang sedang mencari arah hidup melalui interaksi dengan alam, perjalanan yang reflektif, dan hubungan yang tulus antar sesama anggota.</p>
-    </div>
-  </section>
+  <main>
+    <section class="frame animate" id="beranda">
+      <h2>Selamat Datang di Rintis Arah</h2>
+      <p>Komunitas Pecinta Alam dan Pendaki Gunung</p>
+    </section>
 
-  <!-- Keahlian Section -->
-  <section id="skills" class="skill-grid">
-    <h2>Keahlian Kami</h2>
-    <div>
-      <h3>Navigasi dan Survival</h3>
-      <p>Memahami teknik orientasi medan menggunakan peta, kompas, dan GPS, serta keterampilan bertahan hidup di alam bebas.</p>
-    </div>
-    <div>
-      <h3>Pendakian Gunung</h3>
-      <p>Pengalaman dalam pendakian berbagai medan gunung dengan menjaga keselamatan dan kelestarian lingkungan.</p>
-    </div>
-    <div>
-      <h3>Konservasi Lingkungan</h3>
-      <p>Aktif dalam kegiatan pelestarian alam dan edukasi tentang pentingnya menjaga ekosistem dan keanekaragaman hayati.</p>
-    </div>
-    <div>
-      <h3>Fotografi Alam</h3>
-      <p>Mengabadikan keindahan alam untuk meningkatkan kesadaran akan pentingnya pelestarian lingkungan.</p>
-    </div>
-  </section>
-
-  <!-- Visi dan Misi Section -->
-  <section id="vision-mission">
-    <div class="project-card">
+    <section class="frame animate" id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>Rintis Arah adalah komunitas pecinta alam yang menjelajah gunung dengan tanggung jawab dan cinta lingkungan. Kami berfokus pada edukasi, pelestarian, dan perjalanan penuh makna.</p>
       <h3>Visi</h3>
       <p>Membangun ruang tumbuh dan pulang bagi jiwa-jiwa muda yang mencari arah—melalui jejak, jeda, dan perjalanan yang bermakna.</p>
-    </div>
-
-    <div class="project-card">
       <h3>Misi</h3>
-      <p>
-        Kami percaya bahwa merawat alam adalah merawat diri, karena menjaga lingkungan bukan sekadar aksi, melainkan cara untuk menyembuhkan dan menyadarkan diri. Melalui setiap perjalanan dan ekspedisi, kami mencipta makna yang membentuk perspektif dan karakter. Kami menghidupkan komunitas yang tulus dan terus tumbuh, di mana perbedaan dirayakan, cerita dibagikan, dan teman menjadi keluarga. Dengan mengubah cerita menjadi gerak lewat dokumentasi, kami menyuarakan nilai, membangun kesadaran, dan menginspirasi perubahan. Sebagai generasi yang peduli dan peka terhadap alam, sesama, dan suara hati, kami yakin bahwa perubahan besar selalu berawal dari kesadaran kecil.
-      </p>
+      <p>Kami percaya bahwa merawat alam adalah merawat diri, karena menjaga lingkungan bukan sekadar aksi, melainkan cara untuk menyembuhkan dan menyadarkan diri. Melalui setiap perjalanan dan ekspedisi, kami mencipta makna yang membentuk perspektif dan karakter. Kami menghidupkan komunitas yang tulus dan terus tumbuh, di mana perbedaan dirayakan, cerita dibagikan, dan teman menjadi keluarga. Dengan mengubah cerita menjadi gerak lewat dokumentasi, kami menyuarakan nilai, membangun kesadaran, dan menginspirasi perubahan. Sebagai generasi yang peduli dan peka terhadap alam, sesama, dan suara hati, kami yakin bahwa perubahan besar selalu berawal dari kesadaran kecil.</p>
+    </section>
+
+    <section class="frame animate" id="infoSection">
+      <h2>Informasi Gunung</h2>
+      <div id="mountainInfo"></div>
+      <div id="simaksiResult"></div>
+      <div id="weatherResult"></div>
+      <div id="transportResult"></div>
+      <div id="mapContainer"></div>
+    </section>
+
+    <section class="frame animate" id="galeri-statis">
+  <h2>Galeri Gunung</h2>
+
+   <div class="video-container">
+    <video controls width="100%">
+      <source src="Toronto.mp4" type="video/mp4">
+      Browser kamu tidak mendukung pemutar video.
+    </video>
+
+  <!-- Merbabu -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="kevin1.jpg" alt="Merbabu 1">
     </div>
-  </section>
-
-  <!-- Galeri dan Artikel -->
-  <section id="gallery">
-    <div class="project-card">
-      <img src="kevin.jpeg" width="100%" height="auto" alt="Jbel Toubkal" />
-      <div>
-        <h3>Jbel Toubkal</h3>
-        <p>Jbel Toubkal atau Tubkal adalah puncak gunung di barat daya Maroko, 63 km sebelah selatan kota Marrakesh. Terletak di Taman Nasional Toubkal dengan ketinggian 4167 meter, merupakan puncak tertinggi di Pegunungan Atlas sekaligus tertinggi di Afrika Utara Akses paling umum: dari desa Imlil, sekitar 2 jam perjalanan dari Marrakesh
-Pendakian populer:
-Jalur klasik lewat Imlil → Refuge du Toubkal → Puncak
-Umumnya bisa diselesaikan dalam 2 hari.</p>
-      </div>
+    <div class="gallery-item">
+      <img src="kevin2.jpg" alt="Merbabu 2">
     </div>
-
-    <div class="project-card">
-      <img src="kevin1.jpeg" width="100%" height="auto" alt="Gallery Image 1" />
-      <img src="kevin2.jpeg" width="100%" height="auto" alt="Gallery Image 2" />
-       <video width="100%" height="auto" controls>
-        <source src="Toronto4.mp4" type="video/mp4" />
-        Browser Anda tidak mendukung video.
-      </video>
-      <p>Taman Nasional Toubkal punya keanekaragaman hayati, termasuk:
-Pohon juniper, oak, cemara
-Satwa seperti rubah, elang, babi hutan, dan burung-burung endemik
-</p>
+    <div class="gallery-item">
+      <img src="kevin3.jpg" alt="Merbabu 3">
     </div>
-
-    <div class="project-card">
-      <img src="kevin10.jpeg" width="100%" height="auto" alt="Gallery Image 2" />
-      <img src="Rinjani.jpeg" width="100%" height="auto" alt="Gallery Image 2" />
-    </div>
-
-     <div class="project-card">
-      <img src="kevin3.jpeg" width="100%" height="auto" alt="Polisi Hutan" />
-      <img src="kevin5.jpeg" width="100%" height="auto" alt="Polisi Hutan" />
-      <div>
-        <h3>Polisi Hutan</h3>
-        <p>
-Polisi hutan menjaga alam pegunungan dengan tekad melindungi bumi dari kerusakan manusia. Mereka siaga setiap saat, melindungi hutan dari penebangan liar, perburuan, dan kebakaran. Tanpa sorotan, mereka menjaga kehidupan tumbuhan, hewan, dan masa depan kita. Mari hargai polisi hutan, pahlawan lingkungan yang menjaga bumi tetap lestari..</p>
-      </div>
-    </div>
-   
-    <div class="project-card">
-     <video width="100%" height="auto" controls>
-        <source src="Toronto.mp4" type="video/mp4" />
-        Browser Anda tidak mendukung video.
-      </video>
-
-    <p>THE HEART BEHIND THE BADGE follows the journey of these rangers, revealing the personal sacrifices and motivations that drive them to protect the forest. As they fight to safeguard this natural heritage, a poignant question emerges: Can they protect the forest while facing the sacrifices and personal struggles that come with their mission?
-Producer: @seyczii
-Director: robbymrtyn
-Assistant Director: @flogeraldinee
-Script Writers: robbymrtyn & @azovasusiloo
-Fixer: @ayyubmhm
-Researchers: @azovasusiloo & @ayyubmhm
-DOP: @ryanvndz
-Cameraman: @aghniashlrzky & @ryanvndz
-Production Manager: @flogeraldinee
-Production Assistant: @wandapratisaraa @keiatirta @dzikrii_ss
-Offline Editor: @robbymrtyn
-Online Editor: @ayyubmhm</p>
-    </div>
-
-    <div class="project-card">
-      <img src="kevin20.jpeg" width="100%" height="auto" alt="Gallery Image 4" />
-       <video width="100%" height="auto" controls>
-        <source src="Toronto3.mp4" type="video/mp4" />
-        Browser Anda tidak mendukung video.
-      </video>
-      <p>Gunung Ceremai adalah gunung berapi kerucut yang secara administratif termasuk dalam wilayah dua kabupaten, yakni Kabupaten Kuningan dan Kabupaten Majalengka, Provinsi Jawa Barat. Posisi geografis puncaknya terletak pada kordinat 6° 53' 30" LS dan 108° 24' 00" BT, dengan ketinggian 3.078 meter di atas permukaan laut.</p>
-    </div>
-
-     <div class="project-card">
-      <img src="kevin21.jpeg" width="100%" height="auto" alt="Gallery Image 4" />
-    </div>
-
-     <div class="project-card">
-      <img src="kevin22.jpeg" width="100%" height="auto" alt="Gallery Image 4" />
-    </div>
-
-     <div class="project-card">
-       <video width="100%" height="auto" controls>
-        <source src="Toronto6.mp4" type="video/mp4" />
-        Browser Anda tidak mendukung video.
-      </video>
-      <P>Pantai Lovina atau Lovina adalah pesisir pantai yang terletak sekitar 9 km sebelah barat kota Singaraja. Daerah ini merupakan salah satu objek wisata yang ada di Bali Utara.</P>
-      </div>
-     
-
-  </section>
-
-  <!-- Proyek Section -->
-  <section id="projects" class="projects">
-    <h2>Kegiatan Terbaru</h2>
-    <div class="project-card">
-      <h3>Pendakian Gunung Gede Pangrango</h3>
-      <p>Melakukan pendakian di gunung.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Mengenal Sesama Komunitas</h3>
-      <p>Mencari relasi sesama komunitas.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Program Keliling Indonesia</h3>
-      <p>Gerakan mengenal Indonesia lebih dalam.</p>
-    </div>
-  </section>
-
- <div class="project-card">
-      <img src="screenshot6.jpg" width="100%" height="auto" display="block" alt="Dashboard Project" />
-      <div>
-        <h3>Rasis di Rinjani</h3>
-        <p>Tim Rasis Menapaki Rinjani Via Sembalun .</p>
-        <p><strong>Tools:</strong> Premiere Pro, DSLR</p>
-        <p><strong>Dampak:</strong> Mengenal jalur gunung Rinjani Via Sembalun.</p>
-        <a href="https://youtu.be/VOL5e9zGQrA?si=rpW9Ovk5lQKkUZsc">Tonton disini</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="screenshot8.jpg" width="100%" height="auto" display="block" alt="Dashboard Project" />
-      <div>
-        <h3>Rasis Solo di Gede</h3>
-        <p>Tim Rasis Menapaki Solo Hiking di Gunung Gede .</p>
-        <p><strong>Tools:</strong> Premiere Pro, DSLR</p>
-        <p><strong>Dampak:</strong> Mengenal jalur gunung gede.</p>
-        <a href="https://youtu.be/zwFTTr6OL98?si=l7fy-so9qm4VBFvG">Tonton disini</a>
-      </div>
-    </div>
-
-     <div class="project-card">
-  <img src="screenshot7.jpg" width="100%" height="auto" alt="Dashboard Project" />
-  <div>
-    <h3>Rasis di Ciremai</h3>
-    <p>Tim Rasis Menapaki Gunung Ciremai.</p>
-    <p><strong>Tools:</strong> Premiere Pro, DSLR</p>
-    <p><strong>Dampak:</strong> Mengenal jalur Ciremai.</p>
-    <a href="https://drive.google.com/file/d/18kz6h5D8EdoWo_5dkD7t7HtSFfspZXzd/view?usp=drivesdk">Tonton disini</a>
   </div>
-</div>
-
   
-    <div class="project-card">
-      <div>
-        <h3>Kontak Kami</h3>
-      
-        <a href="https://www.instagram.com/rasis.adventure?igsh=Y3psMmxwOGh2bnp4">Instagram</a>
-         <a href="pendakirasis@gmail.com">Email</a>
-      </div>
-    </div>
 
-    <script>
-  const toggle = document.getElementById
 
+</section>
+
+
+    <!-- HASIL PENCARIAN TAMPIL DI SINI (DINAMIS) -->
+    <section class="frame animate" id="searchResult"></section>
+
+    <section class="frame animate" id="form-cerita">
+      <h2>Bagikan Cerita Pendakianmu</h2>
+      <form id="storyForm">
+        <input type="text" name="nama" placeholder="Nama kamu" required />
+        <textarea name="cerita" placeholder="Ceritakan pengalaman mendakimu..." required></textarea>
+        <button type="submit">Kirim Cerita</button>
+      </form>
+    </section>
+
+  <footer>
+    <p>© 2025 Rintis Arah. Menemukan arah lewat jejak.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
